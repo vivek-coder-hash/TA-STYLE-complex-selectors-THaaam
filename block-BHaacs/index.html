@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment complex selector</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/e7f5e19fd1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,9 +17,11 @@
     <div class="container flex justify-between align-center">
 
       <a href="#" class="brand">TrackL</a>
+      <label class="bars" for="toggle"><i class="fas fa-bars"></i></label>
+      <input id="toggle" type="checkbox">
 
       <nav class="nav">
-        <ul class="flex align-center">
+        <ul class="flex align-center sm-coloumn">
           <li>
             <a href="#">Features</a>
           </li>
@@ -44,14 +47,298 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero padding sm-full">
 
       <div class="container">
         <h1> Track The Learning <br>Process the Schedule</h1>
+        <a href="#" class="btn">Get 30 days</a>
+        
       </div>
 
     </section>
+
+    <section class="image ">
+      <div class="container">
+        <img src="./assets/hero.png" class="sm-full" alt="hero-image">
+      </div>
+
+    </section>
+
+    <section class="files padding">
+      <div class="container flex justify-between sm-coloumn sm-align-center">
+
+        <div class="sm-flex-100">
+          <a href="#.pdf">
+          <img src="./assets/pdf.png" class="font-0" alt="pdf img">
+          <h2>PDF FILE</h2>
+          </a>
+      </div>
+
+      <div class="sm-flex-100">
+        <a href="#.docs">
+        <img src="./assets/word.png" class="font-0" alt="pdf img">
+        <h2>WORD FILE</h2>
+        </a>
+    </div>
+    <div class="sm-flex-100">
+        <a href="#.img">
+        <img src="./assets/image.png" class="font-0" alt="pdf img">
+        <h2>IMAGE FILE</h2>
+        </a>
+    </div>
+    <div class="sm-flex-100">
+        <a href="#.vidio">
+        <img src="./assets/video.png" class="font-0" alt="pdf img">
+        <h2>VIDEO FILE</h2>
+        </a>
+    </div>
+
+    
+
+      </div>
+    </section>
+
+
+    <section class="graph padding">
+      
+      <article class="container flex justify-between  flex-wrap sm-coloumn sm-align-center">
+        
+          <div class="flex-46 sm-flex-100">
+              <h2 class="secondary-heading">Monitor Your Learing <br> And Improve It</h2>
+              <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid aut quaerat unde quos expedita. Sint!</p>
+              <button class="btn">learn more</button>
+          </div>
+          <div class="flex-46 font-0 sm-flex-100" >
+              <img src="./assets/learning-graph.png" alt="graph image" class="full-width">
+          </div>
+      </article>
+  </section>
+
+  <section class="table-content padding">
+    <div class="container flex justify-center align-center">
+      <table class="table sm-flex-100">
+        <caption class="secondary-heading">WEEKLY SCORE</caption>
+        <thead>
+            <tr>
+                <th>Days</th>
+                <th>Course</th>
+                <th>Score (0-100)</th>
+                <th>Hour Spent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Product Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Product Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Product Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+            </tr>
+            <tr>
+                <td>Thrusday</td>
+                <td>UI Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>UX Design</td>
+                <td>40</td>
+                <td>2 Hour 30 Min</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Data Science</td>
+                <td>40</td>
+                <td>2 Hour 40 Min</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>HTML & CSS</td>
+                <td>40</td>
+                <td>3 Hour 30 Min</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+
+  </section>
+
+
+  <section class="price padding">
+    <div class="container flex flex-coloumn">
+      <div>
+        <h2 class="secondary-heading">Join US And Let's study <br> With Your Friends</h2>
+      </div>
+
+      
+        <div class="flex align-center justify-center">
+
+          <p>Monthly</p>
+                         
+            <div class="button">
+              <div class="circle">
+  
+              </div>
+  
+            </div>              
+          
+          
+          <p>Yearly</p>
+  
+        </div>
+  
+        <div class="flex wrap justify-between align-center sm-coloumn sm-align-center">
+          <div class="flex-42 price-detail sm-flex-100">
+            <h2 class="secondary-heading">Basic</h2>
+            <p>It is a long established fact that reader will be distracted by readable .</p>
+            <big><span>$48</span>/Month</big>
+            <hr>
+    
+            <ul>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/cross.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/cross.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"><a href="#" class="btn">Get Started</a> </li>
+  
+            </ul>
+    
+          </div>
+  
+  
+          <div class="flex-42 price-detail sm-flex-100">
+            <h2 class="secondary-heading">Most popular</h2>
+            <p>It is a long established fact that reader will be distracted by readable .</p>
+            <big><span>$48</span>/Month</big>
+            <hr>
+    
+            <ul>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/tick.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/cross.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"> <img src="./assets/cross.png" alt=""><a href="#">50 Courses a day</a> </li>
+              <li class="flex align-center justify-center"><a href="#" class="btn">Get Started</a> </li>
+            </ul>
+    
+          </div>
+        </div>
+      
+
+      
+    </div>
+
+  </section>
+
+
+  <section class="start padding">
+    <div class="container">
+      <h2 class="secondary-heading">Start your 30 days Trial Now</h2>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+
+  </section>
+
+
   </main>
+
+
+  <footer class="padding footer">
+    <div class="container">
+      <div class="flex item-start justify-between sm-coloumn sm-align-center">
+        <aside class="flex-20 sm-flex-100">
+          <h2 class="secondary-heading">TracKL</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt ex maxime voluptatem recusandae laborum.</p>
+
+          <ul class="flex align-center sm-align-center sm-coloumn">
+            <li><a href="#"> <i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+            <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+          </ul>
+
+        </aside>
+
+
+        <section class="flex-20 sm-flex-100">
+          <h2 class="secondary-heading">Features</h2>
+          <ul>
+            <li>
+              <a href="#">calender</a>
+            </li>
+
+            <li>
+              <a href="#">Forum</a>
+            </li>
+
+            <li>
+              <a href="#">Messanger</a>
+            </li>
+
+            <li>
+              <a href="#">Schedule</a>
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="flex-20 sm-flex-100">
+          <h2 class="secondary-heading">Support</h2>
+          <ul>
+            <li>
+              <a href="#">calender</a>
+            </li>
+
+            <li>
+              <a href="#">Forum</a>
+            </li>
+
+            <li>
+              <a href="#">Messanger</a>
+            </li>
+
+            <li>
+              <a href="#">Schedule</a>
+            </li>
+          </ul>
+
+        </section>
+
+
+
+        <section class="flex-20 sm-flex-100">
+          <h2 class="secondary-heading">Contact</h2>
+          <ul>
+            <li>
+              <a href="#">hello@email.com</a>
+            </li>
+
+            <li>
+              <a href="#">+1(000) 321 098</a>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </div>
+    </div>
+
+  </footer>
 
     
 </body>
